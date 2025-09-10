@@ -2,6 +2,8 @@ name: .NET Build Check
 
 on:
   pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -14,7 +16,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x' # byt till den version du använder
+          dotnet-version: '8.0.x' # adjust to your version
 
       - name: Restore dependencies
         run: dotnet restore
