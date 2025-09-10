@@ -1,4 +1,4 @@
-name: PR.NET Build Check
+﻿name: PR.NET Build Check
 
 on:
   pull_request:
@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,3 +22,14 @@ jobs:
 
       - name: Build
         run: dotnet build --no-restore --configuration Release
+
+  notify:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"✅ GitHub Action 'build' (PR build) completed successfully!!\"}" \
+          ${{ secrets.DISCORD_HOOK_MY }}
