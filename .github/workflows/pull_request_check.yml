@@ -1,4 +1,4 @@
-name: PR.NET Build Check
+﻿name: PR.NET Build Check
 
 on:
   pull_request:
@@ -23,3 +23,15 @@ jobs:
 
       - name: Build
         run: dotnet build --no-restore --configuration Release
+
+    notify:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"✅ GitHub Action 'build' (PR build) completed successfully!!\"}" \
+          https://discord.com/api/webhooks/EXEMPLE/HOOK
+          
