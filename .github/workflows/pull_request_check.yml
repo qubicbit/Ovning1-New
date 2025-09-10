@@ -32,4 +32,4 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d "{\"content\": \"✅ GitHub Action 'build' (PR build) completed successfully!!\"}" \
-          ${{ secrets.DISCORD_HOOK_MY } }
+          ${{ secrets.DISCORD_HOOK_MY }}
