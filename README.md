@@ -1,14 +1,16 @@
-# Övning 1 – GitHub Actions med .NET ??
+ï»¿# Ã–vning 1 â€“ GitHub Actions med .NET ðŸš€
 
-Detta är ett C#-projekt som används för att öva på GitHub-flöden, inklusive Pull Request-mallar och automatiska byggsteg med GitHub Actions.
+Detta Ã¤r ett C#-projekt som anvÃ¤nds fÃ¶r att Ã¶va pÃ¥ GitHub-flÃ¶den, inklusive Pull Request-mallar och automatiska byggsteg med GitHub Actions.
 
-## ?? Funktioner
+## ðŸ›  Funktioner
 
 - Automatisk `dotnet build` vid varje Pull Request mot `main`
-- Pull Request-template för tydlig dokumentation
+- Pull Request-template fÃ¶r tydlig dokumentation
 - CI-statusbadge direkt i README
 
-## ? PR Build Status
+## âœ… PR Build Status
 
-![PR Build Status](https://github.com/https://github.com/qubicbit/Ovning1-New/actions/workflows/pull_request_check.yml/badge.svg)
+Badge ![PR Build Status]
+(https://github.com/qubicbit/Ovning1-New/actions/workflows/pull_request_check.yml/badge.svg)
+
 
