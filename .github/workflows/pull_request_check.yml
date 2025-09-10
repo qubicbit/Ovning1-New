@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -24,7 +23,7 @@ jobs:
       - name: Build
         run: dotnet build --no-restore --configuration Release
 
-    notify:
+  notify:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -33,5 +32,4 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d "{\"content\": \"✅ GitHub Action 'build' (PR build) completed successfully!!\"}" \
-          https://discord.com/api/webhooks/EXEMPLE/HOOK
-          
+          https://discordapp.com/api/webhooks/1415421029970481262/IPQ-6K1A7ilSCNU0U9Y5PVycZH7D_qMwV2UA9DyZqpdqVPMLvCAqkXKMTJ3R2r02Miue
