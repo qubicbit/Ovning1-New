@@ -19,6 +19,16 @@ Beskriv kort vad du har lagt till eller ändrat i projektet.
 [ ] Triggas GitHub Actions som förväntat?
 [ ] Är README.md uppdaterad med badge?
 
+## ✅ Checklista innan merge
+
+- [ ] Har jag testat att projektet körs lokalt (`dotnet build`, `dotnet run`)?
+- [ ] Har GitHub Actions gått igenom utan fel?
+- [ ] Har jag pushat till rätt branch?
+- [ ] Syns PR-beskrivningen korrekt?
+- [ ] Är README.md uppdaterad med relevant information?
+- [ ] Har jag fått godkännande (om jag jobbar i team)?
+
 ### 💬 Kommentarer
 Har du stött på något problem eller något du vill fråga om?
 1.Pull reguest template måste vara i rätt format? för att PR-beskrivningen var inte synligt.
+
