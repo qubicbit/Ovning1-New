@@ -1,7 +1,7 @@
 ﻿## ✅ PR Build Status
 
-Badge ![PR Build Status]
-(https://github.com/qubicbit/Ovning1-New/actions/workflows/pull_request_check.yml/badge.svg)
+![PR Build Status](https://github.com/qubicbit/Ovning1-New/actions/workflows/pull_request_check.yml/badge.svg)
+
 
 # Övning 1 – GitHub Actions med .NET 🚀
 
