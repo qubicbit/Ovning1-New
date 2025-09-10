@@ -32,4 +32,4 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d "{\"content\": \"✅ GitHub Action 'build' (PR build) completed successfully!!\"}" \
-          https://discordapp.com/api/webhooks/1415421029970481262/IPQ-6K1A7ilSCNU0U9Y5PVycZH7D_qMwV2UA9DyZqpdqVPMLvCAqkXKMTJ3R2r02Miue
+          ${{ secrets.DISCORD_HOOK_MY } }
