@@ -33,4 +33,4 @@ jobs:
           -X POST \
           -d "{\"content\": \"✅ GitHub Action 'build' (PR build) completed successfully!!\"}" \
           ${{ secrets.DISCORD_HOOK }}
-          #use your own discord hook, or hook from chanal 
+          
